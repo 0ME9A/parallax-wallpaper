@@ -15,8 +15,8 @@ $(document).ready(function () {
     // background img movement end---------------------------
 
     // weather actions start here---------------------------
-    let api = '1706aa71832e4e3bae46449117fab248';
-    let city = "bihar sharif";
+    let api = "";
+    let city = "";
     let units = "metric";
     function weather(city, api, units = "metric") {
         let url = "http://api.openweathermap.org/data/2.5/weather?q=";
