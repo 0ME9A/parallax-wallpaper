@@ -1,26 +1,29 @@
-$(document).ready(function () {
-    // background img movement start---------------------------
-    let posX = 0;
-    let posY = 0;
-    function showCoords(event) {
-        var x = event.clientX;
-        var y = event.clientY;
-        $("#move1").css("left", -(x / 5) + "px");
-        $("#move1").css("top", -(y / 5) + "px");
-        $("#move2").css("left", -(x / 6) + "px");
-        $("#move2").css("top", -(y / 6) + "px");
-        $("#move3").css("left", -(x / 7) + "px");
-        $("#move3").css("top", -(y / 7) + "px");
-    }
-    // background img movement end---------------------------
+// background img movement start---------------------------
+let posX = 0;
+let posY = 0;
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    $("#move1").css("left", -(x / 5) + "px");
+    $("#move1").css("top", -(y / 5) + "px");
+    $("#move2").css("left", -(x / 6) + "px");
+    $("#move2").css("top", -(y / 6) + "px");
+    $("#move3").css("left", -(x / 7) + "px");
+    $("#move3").css("top", -(y / 7) + "px");
+}
+// background img movement end---------------------------
 
+$(document).ready(function () {
     // weather actions start here---------------------------
     let api = "";
     let city = "";
     let units = "metric";
     function weather(city, api, units = "metric") {
+
         let url = "http://api.openweathermap.org/data/2.5/weather?q=";
-        fetch(url + city + "&appid=" + api + "&units=" + units).then((response) => response.json()).then((data) => display_weather(data, data.cod));
+        fetch(url + city + "&appid=" + api + "&units=" + units).then((response) => response.json()).then((data) => {
+            data.cod === 200 ? display_weather(data) : $("#address").text("Weather Error!!!");
+        });
 
         function display_weather(data) {
             const { name } = data;
@@ -39,9 +42,6 @@ $(document).ready(function () {
                 else {
                     $("#c_f").text("F");
                 }
-            }
-            else {
-                $("#address").text("Error!!!");
             }
         }
     }
@@ -72,7 +72,6 @@ $(document).ready(function () {
 
     // lively property listener start---------------------------
     let call_function = weather;
-    call_function(city, api)
 
     livelyPropertyListener = (name, val) => {
         switch (name) {
