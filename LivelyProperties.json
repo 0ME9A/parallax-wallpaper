@@ -1,0 +1,75 @@
+{
+    "name": {
+        "text": "Name",
+        "type": "textbox",
+        "value": "Omega"
+    },
+    "appid": {
+        "text": "Apikey",
+        "type": "textbox",
+        "value": "openweather.org key"
+    },
+    "address": {
+        "text": "Location",
+        "type": "textbox",
+        "value": "City, Country, Pin, Zip"
+    },
+    "unit": {
+        "text": "Unit",
+        "type": "dropdown",
+        "value": 0,
+        "items": [
+            "Metric",
+            "Imperial"
+        ]
+    },
+    "fontsize_1": {
+        "text": "fontsize 1",
+        "type": "slider",
+        "min": 0,
+        "max": 25,
+        "value": 8,
+        "tick": 50
+    },
+    "fontsize_2": {
+        "text": "fontsize 2",
+        "type": "slider",
+        "min": 0,
+        "max": 100,
+        "value": 18,
+        "tick": 50
+    },
+    "weather_size": {
+        "text": "Weather size",
+        "type": "slider",
+        "min": "0",
+        "max": "10",
+        "value": 2,
+        "tick": 50
+    },
+    "quotes": {
+        "text": "Quotes update in minutes",
+        "type": "textbox",
+        "value": 5
+    },
+    "color_1": {
+        "text": "Color 1",
+        "type": "color",
+        "value": "#ffffff"
+    },
+    "color_2": {
+        "text": "Color 2",
+        "type": "color",
+        "value": "#7C939E"
+    },
+    "weather": {
+        "text": "Weather",
+        "type": "checkbox",
+        "value": true
+    },
+    "btnRefresh": {
+        "text": "Click to Update",
+        "type": "button",
+        "value": "Refresh"
+    }
+}

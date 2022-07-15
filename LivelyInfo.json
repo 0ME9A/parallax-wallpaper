@@ -1,0 +1,14 @@
+{
+    "AppVersion": "0.1.0.0",
+    "Title": "Parallax",
+    "Thumbnail": "",
+    "Preview": "",
+    "Desc": "Wallpaper with Quotes and Weather",
+    "Author": "OMEGA",
+    "License": "MIT",
+    "Contact": "https://github.com/0me9a/Parallax",
+    "Type": 1,
+    "FileName": "index.html",
+    "Arguments": null,
+    "IsAbsolutePath": false
+}

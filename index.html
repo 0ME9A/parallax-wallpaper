@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onmousemove="showCoords(event)">
+    <div class="event-handler" id="event-handler">
+        <div class="img-container" id="img-container1">
+            <img src="img/mountain.jpg" alt="" id="move1">
+        </div>
+        <div class="img-container" id="img-container2">
+            <img src="img/mountain.jpg" alt="" id="move2">
+        </div>
+        <div class="img-container" id="img-container3">
+            <img src="img/mountain.jpg" alt="" id="move3">
+        </div>
+    </div>
+    <div class="text-container">
+        <div class="weather-container">
+            <img src="" alt="weather icon" id="weather-icon">
+            <h3 id="temperature-container">
+                <span id="temperature"> _ _</span>
+                <span id="deg_icon">&#176;</span>
+                <span id="c_f">_</span>
+                <span id="address">your address</span>
+            </h3>
+        </div>
+        <div class="favorites">
+            <button></button>
+        </div>
+        <h1 id="name">Omega</h1>
+        <p>
+            <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate aperiam veritatis.
+                Voluptates beatae quis qui atque, eum nesciunt excepturi reprehenderit corrupti perspiciatis, vero at
+                accusamus, facilis blanditiis consequuntur laboriosam!</q><br />
+            <strong>Author</strong>
+        </p>
+    </div>
+
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js" charset="utf-8"></script>
+</body>
+
+</html>
