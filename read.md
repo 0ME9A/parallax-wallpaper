@@ -13,6 +13,7 @@
     <time dateTime='May 11, 2021'>Date: Jul 15, 2022</time><br/>
     <a href='https://heyomega.github.io/parallax/' target"_blank">Github</a><br/>
     <a href='https://codesandbox.io/s/0me9a-parallax-94pkoc' target"_blank">Code Sandbox</a><br/>
+    <a href='https://www.deviantart.com/heyome9a/art/Parallax-922657513' target"_blank">Deviant Art</a><br/>
   </div>
   <p>Free and open-source software that allows users to set animated desktop wallpapers and screensavers.
     Personalize your desktop with Parallax using <a href="https://rocksdanister.github.io/lively/" target="_blank"> lively </a>wallpaper.</p>
