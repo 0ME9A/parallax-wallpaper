@@ -76,4 +76,4 @@ Users should be able to:
 
 - Website - [OMEGA](https://ome9a.com)
 - Frontend Mentor - [@0me9a](https://www.frontendmentor.io/profile/0me9a)
-- Twitter - [@omega86735940](https://twitter.com/omega86735940)
+- Twitter - [@omegaStrikes](https://twitter.com/omegastrikes)
